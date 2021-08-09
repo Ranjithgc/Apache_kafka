@@ -30,4 +30,3 @@ with requests.Session() as s:
     my_list = list(cr)
     for row in my_list:
         producer.send('testTopic',row)
-        time.sleep(1)
