@@ -8,12 +8,8 @@
 
     Step 3: write the python code on a producer.py file and add the api key using the .env file.
 
-    Step 4: write the python code on a consumer.py file to dispaly stock data and create a text file and store the output into it.
+    Step 4: write the python code on a consumer.py file to store data into hdfs using pydoop library.
 
-    Step 5: now start all servers of hdfs by start-all.sh command and create a directory on hdfs as stock_live_data.
-
-    Step 6: now copy the output file of consumer.py to hdfs by using copyFromLocal command.
-
-    Step 7: now we can see our output or file is successfully written by sink in our hdfs as stock_data
+    Step 5: now we can see our output or file is successfully written by sink in our hdfs as stock_data
 
     Video link for this task is : https://youtu.be/asBUv38TE7M
