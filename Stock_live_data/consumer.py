@@ -11,5 +11,5 @@ consumer = KafkaConsumer('testTopic')
 hdfs_path = 'hdfs://localhost:9000/kafka_stock_data/data.txt'
 for message in consumer:
     values = message.value
-    with hdfs.open(hdfs_path, 'a') as f:    
-        f.write(values)
+    with hdfs.open(hdfs_path, 'at') as f:    
+        f.write(f"{values}\n")
